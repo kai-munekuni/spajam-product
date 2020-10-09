@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		CAED5FAD25300A4000588521 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAED5FAC25300A4000588521 /* AppDelegate.swift */; };
 		CAED5FAF25300A4000588521 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAED5FAE25300A4000588521 /* SceneDelegate.swift */; };
-		CAED5FB125300A4000588521 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAED5FB025300A4000588521 /* ViewController.swift */; };
-		CAED5FB425300A4000588521 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAED5FB225300A4000588521 /* Main.storyboard */; };
 		CAED5FB625300A4300588521 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAED5FB525300A4300588521 /* Assets.xcassets */; };
 		CAED5FB925300A4300588521 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAED5FB725300A4300588521 /* LaunchScreen.storyboard */; };
+		CAED5FCB25300D6500588521 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAED5FC925300D6500588521 /* ViewController.swift */; };
+		CAED5FCC25300D6500588521 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAED5FCA25300D6500588521 /* ViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CAED5FA925300A4000588521 /* spajam-product.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "spajam-product.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAED5FAC25300A4000588521 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAED5FAE25300A4000588521 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CAED5FB025300A4000588521 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CAED5FB325300A4000588521 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CAED5FB525300A4300588521 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CAED5FB825300A4300588521 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CAED5FBA25300A4300588521 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAED5FC925300D6500588521 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CAED5FCA25300D6500588521 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +58,11 @@
 			children = (
 				CAED5FAC25300A4000588521 /* AppDelegate.swift */,
 				CAED5FAE25300A4000588521 /* SceneDelegate.swift */,
-				CAED5FB025300A4000588521 /* ViewController.swift */,
-				CAED5FB225300A4000588521 /* Main.storyboard */,
 				CAED5FB525300A4300588521 /* Assets.xcassets */,
 				CAED5FB725300A4300588521 /* LaunchScreen.storyboard */,
 				CAED5FBA25300A4300588521 /* Info.plist */,
+				CAED5FC925300D6500588521 /* ViewController.swift */,
+				CAED5FCA25300D6500588521 /* ViewController.xib */,
 			);
 			path = "spajam-product";
 			sourceTree = "<group>";
@@ -125,8 +125,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAED5FB925300A4300588521 /* LaunchScreen.storyboard in Resources */,
+				CAED5FCC25300D6500588521 /* ViewController.xib in Resources */,
 				CAED5FB625300A4300588521 /* Assets.xcassets in Resources */,
-				CAED5FB425300A4000588521 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAED5FB125300A4000588521 /* ViewController.swift in Sources */,
+				CAED5FCB25300D6500588521 /* ViewController.swift in Sources */,
 				CAED5FAD25300A4000588521 /* AppDelegate.swift in Sources */,
 				CAED5FAF25300A4000588521 /* SceneDelegate.swift in Sources */,
 			);
@@ -146,14 +146,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CAED5FB225300A4000588521 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CAED5FB325300A4000588521 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CAED5FB725300A4300588521 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
