@@ -19,17 +19,20 @@ class CustomTabBarController: UITabBarController {
         tabBar.backgroundColor = .white
         tabBar.barTintColor = .white
         
-        let controller1 = UIViewController()
+        let controller1 = TotalNutritionViewController()
         let tabItem1 = UITabBarItem()
         tabItem1.image = #imageLiteral(resourceName: "home_outline.png")
         controller1.tabBarItem = tabItem1
         let nav1 = UINavigationController(rootViewController: controller1)
+        
 
-        let controller2 = UIViewController()
+        let controller2 = HistoryViewController()
         let tabItem2 = UITabBarItem()
         tabItem2.image = #imageLiteral(resourceName: "calendar.png")
         controller2.tabBarItem = tabItem2
         let nav2 = UINavigationController(rootViewController: controller2)
+        nav2.navigationItem.largeTitleDisplayMode = .always
+        nav2.title = "履歴"
         
         addViewController = UIViewController()
         addViewController?.view.backgroundColor = .white
