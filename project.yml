@@ -4,7 +4,7 @@ options:
   developmentLanguage: ja
   preGenCommand: |
     mint bootstrap 
-    mint run carthage bootstrap
+    mint run carthage bootstrap --platform iOS
 targets:
     spajam-product:
       type: application
