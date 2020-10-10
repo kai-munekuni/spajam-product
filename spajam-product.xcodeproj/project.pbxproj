@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA9F19E8253141CB00758F6A /* Action in Frameworks */ = {isa = PBXBuildFile; productRef = CA9F19E7253141CB00758F6A /* Action */; };
 		CAED5FAD25300A4000588521 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAED5FAC25300A4000588521 /* AppDelegate.swift */; };
 		CAED5FAF25300A4000588521 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAED5FAE25300A4000588521 /* SceneDelegate.swift */; };
 		CAED5FB625300A4300588521 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAED5FB525300A4300588521 /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA9F19E8253141CB00758F6A /* Action in Frameworks */,
 				D34E1B5C253133ED00206956 /* RxRelay in Frameworks */,
 				D34E1B5A253133ED00206956 /* RxCocoa in Frameworks */,
 				D34E1B58253133ED00206956 /* RxSwift in Frameworks */,
@@ -93,6 +95,7 @@
 				D34E1B57253133ED00206956 /* RxSwift */,
 				D34E1B59253133ED00206956 /* RxCocoa */,
 				D34E1B5B253133ED00206956 /* RxRelay */,
+				CA9F19E7253141CB00758F6A /* Action */,
 			);
 			productName = "spajam-product";
 			productReference = CAED5FA925300A4000588521 /* spajam-product.app */;
@@ -123,6 +126,7 @@
 			mainGroup = CAED5FA025300A4000588521;
 			packageReferences = (
 				D34E1B56253133ED00206956 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				CA9F19E6253141CB00758F6A /* XCRemoteSwiftPackageReference "Action" */,
 			);
 			productRefGroup = CAED5FAA25300A4000588521 /* Products */;
 			projectDirPath = "";
@@ -349,6 +353,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		CA9F19E6253141CB00758F6A /* XCRemoteSwiftPackageReference "Action" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/Action.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.1.0;
+			};
+		};
 		D34E1B56253133ED00206956 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactiveX/RxSwift";
@@ -360,6 +372,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		CA9F19E7253141CB00758F6A /* Action */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA9F19E6253141CB00758F6A /* XCRemoteSwiftPackageReference "Action" */;
+			productName = Action;
+		};
 		D34E1B57253133ED00206956 /* RxSwift */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = D34E1B56253133ED00206956 /* XCRemoteSwiftPackageReference "RxSwift" */;
