@@ -37,12 +37,12 @@ targets:
         - carthage: RxSwift
         - carthage: SVProgressHUD
         - carthage: RxAlamofire
-    Widget:
+    Widgets:
       type: app-extension
       platform: iOS
-      source: Widget
+      source: Widgets
       settings:
         base: 
-          INFOPLIST_FILE: ./Widget/Info.plist
+          INFOPLIST_FILE: ./Widgets/Info.plist
 
 
