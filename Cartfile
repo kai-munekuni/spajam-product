@@ -1,0 +1,5 @@
+github "ReactiveX/RxSwift"
+github "RxSwiftCommunity/Action" 
+github "SVProgressHUD/SVProgressHUD"
+github "RxSwiftCommunity/RxAlamofire"
+github "realm/realm-cocoa"

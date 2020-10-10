@@ -1,0 +1,48 @@
+name: spajam-product
+options:
+  bundleIdPrefix: com.litech
+  developmentLanguage: ja
+  preGenCommand: |
+    mint bootstrap 
+    mint run carthage bootstrap
+targets:
+    spajam-product:
+      type: application
+      platform: iOS
+      sources:
+        - spajam-product
+      info:        
+        path: "./spajam-product/Info.plist"
+        properties:
+          UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait, UIInterfaceOrientationPortraitUpsideDown, UIInterfaceOrientationLandscapeRight, UIInterfaceOrientationLandscapeLeft]
+          UILaunchScreen:
+          UIApplicationSceneManifest: 
+            UIApplicationSupportsMultipleScenes: true
+          
+      settings:
+        base:
+          DEVELOPMENT_TEAM: 2X6AD4W323
+          DEBUG_INFORMATION_FORMAT: dwarf-with-dsym
+          MARKETING_VERSION: 1.0.0
+          CURRENT_PROJECT_VERSION: 1
+          FRAMEWORK_SEARCH_PATHS: $(inherited) $(PROJECT_DIR)/Carthage/Build/iOS
+          OTHER_LDFLAGS:
+            - $(inherited)
+            - $(OTHER_LDFLAGS)
+            - -ObjC
+      preBuildScripts:
+      dependencies:
+        - carthage: RealmSwift
+        - carthage: Action
+        - carthage: RxSwift
+        - carthage: SVProgressHUD
+        - carthage: RxAlamofire
+    Widget:
+      type: app-extension
+      platform: iOS
+      source: Widget
+      settings:
+        base: 
+          INFOPLIST_FILE: ./Widget/Info.plist
+
+
