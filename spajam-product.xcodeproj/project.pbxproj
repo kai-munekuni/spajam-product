@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,9 @@
 		CAED5FB925300A4300588521 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAED5FB725300A4300588521 /* LaunchScreen.storyboard */; };
 		CAED5FCB25300D6500588521 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAED5FC925300D6500588521 /* ViewController.swift */; };
 		CAED5FCC25300D6500588521 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAED5FCA25300D6500588521 /* ViewController.xib */; };
+		D34E1B58253133ED00206956 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D34E1B57253133ED00206956 /* RxSwift */; };
+		D34E1B5A253133ED00206956 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = D34E1B59253133ED00206956 /* RxCocoa */; };
+		D34E1B5C253133ED00206956 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = D34E1B5B253133ED00206956 /* RxRelay */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D34E1B5C253133ED00206956 /* RxRelay in Frameworks */,
+				D34E1B5A253133ED00206956 /* RxCocoa in Frameworks */,
+				D34E1B58253133ED00206956 /* RxSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +89,11 @@
 			dependencies = (
 			);
 			name = "spajam-product";
+			packageProductDependencies = (
+				D34E1B57253133ED00206956 /* RxSwift */,
+				D34E1B59253133ED00206956 /* RxCocoa */,
+				D34E1B5B253133ED00206956 /* RxRelay */,
+			);
 			productName = "spajam-product";
 			productReference = CAED5FA925300A4000588521 /* spajam-product.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +121,9 @@
 				Base,
 			);
 			mainGroup = CAED5FA025300A4000588521;
+			packageReferences = (
+				D34E1B56253133ED00206956 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = CAED5FAA25300A4000588521 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -279,6 +293,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2X6AD4W323;
 				INFOPLIST_FILE = "spajam-product/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -297,6 +312,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2X6AD4W323;
 				INFOPLIST_FILE = "spajam-product/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -331,6 +347,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D34E1B56253133ED00206956 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D34E1B57253133ED00206956 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D34E1B56253133ED00206956 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		D34E1B59253133ED00206956 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D34E1B56253133ED00206956 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		D34E1B5B253133ED00206956 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D34E1B56253133ED00206956 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CAED5FA125300A4000588521 /* Project object */;
 }
