@@ -5,7 +5,7 @@ options:
   preGenCommand: |
     mint bootstrap 
     chmod +x ./scripts/carthage.sh
-    ./scripts/carthage.sh bootstrap --platform iOS
+    ./scripts/carthage.sh bootstrap --platform iOS --cache-builds
 targets:
     spajam-product:
       type: application
