@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScanFoodViewController" customModule="spajam_product" customModuleProvider="target">
+            <connections>
+                <outlet property="captureView" destination="Z3Q-YK-xcE" id="QCX-xK-w2G"/>
+                <outlet property="nutritionContaienrView" destination="Ai1-7r-agk" id="2vl-Yi-hAl"/>
+                <outlet property="nutritionCotainerViewHeightConstraint" destination="hX5-D8-le6" id="lUe-lO-vdS"/>
+                <outlet property="parentStackViewTopConstriant" destination="kX8-QG-p7o" id="psz-Wb-9fc"/>
+                <outlet property="scanButtonContainer" destination="Zu7-2a-3YW" id="mkj-hQ-9M7"/>
+                <outlet property="stackView" destination="bsY-dG-SK6" id="iGt-H8-aQ2"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bsY-dG-SK6">
+                    <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ORx-Zt-aa4">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="414"/>
+                            <subviews>
+                                <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3NR-Rf-ENB">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="0.0"/>
+                                </imageView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z3Q-YK-xcE">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="414"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="ORx-Zt-aa4" secondAttribute="height" multiplier="1:1" id="EMW-6I-GkP"/>
+                            </constraints>
+                        </stackView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zu7-2a-3YW" customClass="ScanButtonContainer" customModule="spajam_product" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="414" width="414" height="360"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="ORx-Zt-aa4" secondAttribute="trailing" id="QSJ-Er-cjN"/>
+                    </constraints>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ai1-7r-agk" customClass="NutritionListContainerView" customModule="spajam_product" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="862" width="414" height="0.0"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" id="hX5-D8-le6"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="bsY-dG-SK6" secondAttribute="trailing" id="1vt-QF-thA"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="bsY-dG-SK6" secondAttribute="bottom" id="GST-i4-g6w"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Ai1-7r-agk" secondAttribute="trailing" id="fwv-qC-jds"/>
+                <constraint firstItem="bsY-dG-SK6" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="44" id="kX8-QG-p7o"/>
+                <constraint firstItem="Ai1-7r-agk" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="ptz-xg-dML"/>
+                <constraint firstItem="bsY-dG-SK6" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="qki-Df-UVx"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Ai1-7r-agk" secondAttribute="bottom" id="y6Q-vX-tdP"/>
+            </constraints>
+            <point key="canvasLocation" x="122" y="134"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
